@@ -300,21 +300,114 @@ for loop.*/
 //     return 0;
 // } 
 
-string input(string &str){
-    int count{};
-    for(char c : str){
-        tolower(str);
-        if(isalpha(str) )
-    }
-}
+//Another Approach
 
-int main(){
-    string str{};
-    cout<<"Enter a string: ";
-    getline(cin,str);
+// int count_vowels( string &input_user){
+//     int count{};
+
+//     for( char c : input_user){
+//         char lower_case = tolower(c);
+
+//         if(isalpha(lower_case) && (lower_case == 'a' || lower_case == 'e'|| lower_case == 'i' || lower_case == 'o' || lower_case == 'u')){
+//             count++;
+//         }
+//     }
+//     return count;
+// }
+
+// int main(){
+//     string input_user{};
+
+//     cout<<"Enter a string: ";
+//     getline(cin,input_user);
+
+//     int result = count_vowels(input_user);
     
-    input(str);
-   
+//     cout<<result;
+
+//     return 0;
+// }
+
+//Another Approach
+
+// int count_vowels(string &input_user){
+//     int count{};
+//     string vowels{"aeiouAeiou"};
+
+//     for(char c : input_user){
+//         if(vowels.find(c) != string::npos)
+//         count++;
+//     }
+//     return count;
+// }
+
+// int main(){
+//     string input_user{};
+
+//     cout<<"Enter a string: ";
+//     getline(cin,input_user);
+
+//     int result = count_vowels(input_user);
     
-    return 0;
-}
+//     cout<<result;
+
+//     return 0;
+// }
+
+/*Q - Write a program to find the largest and smallest 
+elements in an array using a for loop.*/
+
+//With Using Functions
+// int elements(int arr[],int length_arr,int &smallest,int &largest){
+    
+//     for(int i{1};i < length_arr;i++){
+//         if(largest <= arr[i]){
+//             largest = arr[i];
+//         }
+//     }
+
+//     for(int i{1};i < length_arr;i++){
+//         if(smallest >= arr[i]){
+//             smallest = arr[i];
+//         }
+//     }
+// }
+
+// int main(){
+//     int arr[]{1,34,25,674,35,76,1,876,96,43,563,63,12,34,54};
+//     int smallest{arr[0]},largest{arr[0]};
+//     int length_arr = sizeof(arr)/sizeof(arr[0]);
+
+//     elements(arr,length_arr,smallest,largest);
+
+//     cout<<"\nLargest: "<<largest<<endl;
+//     cout<<"Smallest: "<<smallest<<endl;
+
+//     return 0;
+// }
+//Another Approach
+// int main(){
+//     int arr[]{1,34,25,674,35,76,1,876,96,43,563,63,12,34,54};
+//     int smallest{arr[0]},largest{arr[0]};
+//     int length_arr = sizeof(arr)/sizeof(arr[0]);
+    
+//     for(int i{1};i <=length_arr;i++){
+//         if(largest <= arr[i]){
+//             largest = arr[i];
+//         }
+//     }
+
+//     for(int i{1};i <=length_arr;i++){
+//         if(smallest >= arr[i]){
+//             smallest = arr[i];
+//         }
+//     }
+//     cout<<"\nLargest: "<<largest<<endl;
+//     cout<<"Smallest: "<<smallest<<endl;
+
+
+//     return 0;
+// }
+
+
+

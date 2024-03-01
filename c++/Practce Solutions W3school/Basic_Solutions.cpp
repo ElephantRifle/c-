@@ -29,8 +29,8 @@ using namespace std;
 
 //     return 0;
 // }
-// // =======================================================================================
-// //20 . Write a C++ program to convert temperature in Celsius to Fahrenheit.
+ // =======================================================================================
+ //20 . Write a C++ program to convert temperature in Celsius to Fahrenheit.
 
 // int main(){
 //     double celsius{};
@@ -40,14 +40,14 @@ using namespace std;
 
 //     double celcius_to_fahrenheit{(celsius*9)/5+32};
 
-//     // cout<<fixed<<setprecision(2);
+     // cout<<fixed<<setprecision(2);
 //     cout<<celsius<<" is equal to "<<celcius_to_fahrenheit<<" fahrenheit."<<endl;
 //     cout<<endl;
 
 //     return 0;
 // }
 
-// // 37. Write a C++ program to print a mystery series from 1 to 50.
+ // 37. Write a C++ program to print a mystery series from 1 to 50.
 // int main(){
 //     int num{1};
 
@@ -59,7 +59,7 @@ using namespace std;
 //     return 0;
 // }
 
-// //38. Write a C++ program that takes a number as input and prints its multiplication table up to 10.
+ //38. Write a C++ program that takes a number as input and prints its multiplication table up to 10.
 // int main(){
 //     int number{};
 //     cout<<"\nEnter a number: ";
@@ -72,7 +72,7 @@ using namespace std;
 //  return 0;
 // }
 
-// // 40. Write a C++ program to print the area and perimeter of a rectangle.
+ // 40. Write a C++ program to print the area and perimeter of a rectangle.
 // int main(){
 //     double length{};
 //     double width{};
@@ -94,7 +94,7 @@ using namespace std;
 //     return 0;
 // }
 
-// // 42. Write a C++ program that accepts the user's first and last name and prints them in reverse order with a space between them.
+ // 42. Write a C++ program that accepts the user's first and last name and prints them in reverse order with a space between them.
 
 // int main(){
 //     string first_name{};
@@ -117,7 +117,7 @@ using namespace std;
 //     return 0;
 // }
 
-// //47. Write a C++ program to calculate the sum of all even and odd numbers in an array.
+//47. Write a C++ program to calculate the sum of all even and odd numbers in an array.
 
 // int main(){
 //   int array[]{1,2,3,4,5,6,7,8,9};
@@ -126,11 +126,11 @@ using namespace std;
 //   int even{};
 
 //   for(int i{0};i<size;i++){
-//     // if(array[i]%2 == 0){
-//     //   even+=array[i];
-//     // }else{
-//     //   odd+=array[i];
-//     // }
+     // if(array[i]%2 == 0){
+      //   even+=array[i];
+     // }else{
+    //   odd+=array[i];
+     // }
 //     array[i]%2==0? even+=array[i]:odd+=array[i];
 //   }
 //   cout<<"Addition of even numbers are: "<<even<<endl;
@@ -138,7 +138,7 @@ using namespace std;
 
 //   return 0;
 // }
-// //48. Write a C++ program that swaps two variables without using a third variable.
+//48. Write a C++ program that swaps two variables without using a third variable.
 
 // int main(){
 //   int a{20};
@@ -152,7 +152,7 @@ using namespace std;
 //   return 0;
 // }
 
-// //49. Write a C++ program to print the code (ASCII code / Unicode code etc.) of a given character.
+ //49. Write a C++ program to print the code (ASCII code / Unicode code etc.) of a given character.
 // int main(){
 //     char character{};
 //     cout<<"\nEnter a character to print its ASCII/Unicode: ";
@@ -164,7 +164,7 @@ using namespace std;
 //     return 0;
 // }
 
-// //61. Write a C++ program to swap the first and last digits of any number.
+ //61. Write a C++ program to swap the first and last digits of any number.
 // int main(){
 //     vector<int>numbers{};
 //     int num{};
@@ -190,7 +190,7 @@ using namespace std;
 //     return 0;
 // }
 
-// //60. Write a C++ program to add two binary numbers.
+ //60. Write a C++ program to add two binary numbers.
 
 
 // string  binary_addition(string &s1, string &s2)
@@ -233,7 +233,7 @@ using namespace std;
 
 //     return 0;
 // }
-// //TO UNDERSTAND HOW THE lOOP WORKS IN FUNCTION binary_addition
+ //TO UNDERSTAND HOW THE lOOP WORKS IN FUNCTION binary_addition
 // #include <iostream>
 // #include<string>
 // using namespace std;
@@ -264,5 +264,4 @@ using namespace std;
 //     return 0;
 // }
 
-// // 62. Write a C++ program that reads the integer n and prints a twin prime that has the maximum size among twin primes less than or equal to n.
-
+ // 62. Write a C++ program that reads the integer n and prints a twin prime that has the maximum size among twin primes less than or equal to n.
