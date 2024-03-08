@@ -137,9 +137,172 @@ multiplication table up to 10.*/
 //     return 0;
 // }
 /*Q - 39. Write a C++ program to print the following pattern.*/
-int main(){
-    int n{7};
+
+/*Q - 43. Write a C++ program that accepts the radius of a circle from the user and 
+computes the area and circumference.
+*/
+// int main(){
+//     const double pie{3.141};
+//     double radius{},area{},circumference{};
+
+//     cout<<"Enter radius: ";
+//     cin>>radius;
+
+//     area = pie*radius*radius;
+//     circumference = 2*pie*radius;
+
+//     cout<<"Area: "<<area<<endl;
+//     cout<<"Circumference: "<<circumference<<endl;
+
+//     return 0;
+// }
+
+/*Q- 44. Write a C++ program to get the volume of a sphere with radius 6.*/
+// int main(){
+//     const double pie{3.141};
+//     double rad{},volume{};
+
+//     cout<<"Enter radius: ";
+//     cin>>rad;
+
+//     volume = (4*pie*rad*rad*rad)/3;
+
+//     cout<<"Volume: "<<volume<<endl;
+
+//     return 0;
+// }
+
+/*Q -47. Write a C++ program to calculate the sum of all even and odd numbers in an 
+array.*/
+// int main(){
+//     int arr[]{12,11,45,34,67,88,90,76,51,21,43};
+//     int size = sizeof(arr)/sizeof(arr[0]);
+//     int even_t{};
+//     int odd_t{};
+
+//     for(int i{0};i < size;i++){
+//         if(arr[i] % 2 == 0){
+//             even_t+= arr[i];
+//         }else{
+//             odd_t+= arr[i];
+//         }
+//     }
+//     cout<<even_t<<endl;
+//     cout<<odd_t<<endl;
+
+//     return 0;
+// }
+/*Q- 59. Write a C++ program to compute the distance between two points on the surface of the 
+earth.*/
+// int main(){
+//     double distance{},la1{},la2{},lo1{},lo2{};
+//     double r{0.01745327};//conversion factor pi/180
+//     double earth_rad{6371.01};
+
+//     cout<<"Enter latitude and logitude of Point A: "<<endl;
+//     cin>>la1>>lo1;
+
+//     cout<<"Enter latitude and logitude of Point B: "<<endl;
+//     cin>>la2>>lo2;
+
+//     la1*=r; 
+//     lo1*=r; 
+//     la2*=r; 
+//     lo2*=r; 
+
+//     distance = earth_rad * acos((sin(la1) * sin(la2)) + (cos(la1) * cos(la2) * cos(lo1 - lo2)));
+
+//     cout<<"The distance between two points are: "<<distance<<" km"<<endl;
+
+//     return 0;
+// }
+
+/*Q - 60. Write a C++ program to add two binary numbers.*/
+
+// string binary_addition(string &b1 ,string &b2){
+//     int carry{};
+//     int i{},j{};
+//     string result{};
+
+//     i = b1.length()-1;
+//     j = b2.length()-1;
+
+//     while(i >= 0 || j >= 0 || carry!=0){
+//         int sum = carry;
+
+//         if(i >= 0){
+//             sum+=b1[i] -'0';
+//             i--;
+//         }
+//         if(j >= 0){
+//             sum+=b2[j] - '0';
+//             j--;
+//         }
+//         carry = sum/2;
+//         sum = sum % 2;
+//         result = to_string(sum) + result;
+//     }
+//     return result;
+// }
+
+// int main(){
+//     string b1{},b2{};
+
+//     cout<<"Enter binary no1: "; 
+//     cin>>b1;
+//     cout<<"Enter binary no2: ";
+//     cin>>b2;
+
+//     string sum =binary_addition(b1,b2);
+//     cout<<sum;
+
+//     return 0;
+// }
+/*Q - 61. Write a C++ program to swap the first and last digits of any number.*/
+// int main(){
+//     int number{};
+//     int size{};
+//     cout<<"Enter a number: ";
+//     cin>>number;
+
+//     string n = to_string(number);
+//     size = n.length()-1; 
     
+//     char t = n[0];
+//     n[0] = n[size];
+//     n[size] = t;
+
+//     cout<<n;
+ 
+//     return 0;
+// }
+/*Q - 62. Write a C++ program that reads the integer n and prints a twin prime that 
+has the maximum size among twin primes less than or equal to n.*/
+//Primality refers to the property of a number being prime.
+int main(){
+    int n{};
+    cout<<"Enter a number: ";
+    cin>>n;
+
+    vector<int>prime{};
+
+    for(int i{2}; i<=n;i++){
+        bool isprime = true;
+
+        for(int j{2};j * j <= i;j++){
+            if(i % j == 0){
+                isprime = false;
+                break;
+            }
+        }
+        if(isprime){
+            prime.push_back(i);
+        }
+    }
+
+    for(size_t t : prime){
+        cout<<t<<" ";
+    }
 
     return 0;
 }

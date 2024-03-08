@@ -33,17 +33,17 @@ int main(){
     //   cout<<str;  
     // }
     
-  int a{7};
-  int b{6};
-  cout<<&a<<endl;
-  cout<<&b<<endl;
-  cout<<"-------------------------------"<<endl;
-  int &p{a};
-  p=b;
+  // int a{7};
+  // int b{6};
+  // cout<<&a<<endl;
+  // cout<<&b<<endl;
+  // cout<<"-------------------------------"<<endl;
+  // int &p{a};
+  // p=b;
   
-  cout<<&a<<endl;
-  cout<<&b<<endl;
-  cout<<&p<<endl;
+  // cout<<&a<<endl;
+  // cout<<&b<<endl;
+  // cout<<&p<<endl;
 
 
   // int a{10};
