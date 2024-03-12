@@ -277,28 +277,28 @@ while loop.*/
 // }
 /*Q- Write a program to count the number of vowels in a given string using a 
 for loop.*/
-// int main(){
-//     string str{};
-//     char vowels[]{'a','e','i','o','u'};
+int main(){
+    string str{};
+    char vowels[]{'a','e','i','o','u'};
 
-//     cout<<"Enter a string: ";
-//     getline(cin,str);
+    cout<<"Enter a string: ";
+    getline(cin,str);
 
-//     int count{};
-//     string stored{};
+    int count{};
+    string stored{};
 
-//     for(char s : str){
-//         for(char v : vowels){
-//             if(tolower(s) == v){
-//                 stored+= s;
-//             }
-//         } 
-//     }
-//     if()
-//     cout<<"Vowels: "<<stored<<endl;
-//     cout<<"No of volwels: "<<count<<endl;
-//     return 0;
-// } 
+    for(char s : str){
+        for(char v : vowels){
+            if(tolower(s) == v){
+                stored+= s;
+                count+=1;
+            }
+        } 
+    }
+    cout<<"Vowels: "<<stored<<endl;
+    cout<<"No of volwels: "<<count<<endl;
+    return 0;
+} 
 
 //Another Approach
 
