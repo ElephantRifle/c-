@@ -529,7 +529,14 @@ the number of combinations where the sum of the digits equals the given number
 . Do not use the same digits in a combination.*/
 
 int main(){
+    int n{},s{};
+    cout<<"How many number your want ex.3=(123)->";
+    cin>>n;
+    cout<<"What should be the sum of those number ex.5=3+2+1->";
+    cin>>s;
+
     
+
 
     return 0;
 }
