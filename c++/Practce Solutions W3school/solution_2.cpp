@@ -512,18 +512,18 @@ count the number of digits in the sum value.*/
 //     return 0;
 // }
 //Another approach using reference and ranged based for loop,this dosen't copy data
-int main(){
-    string s{};
-    cout<<"->";
-    getline(cin,s);
+// int main(){
+//     string s{};
+//     cout<<"->";
+//     getline(cin,s);
 
-    for(char &c : s)  {
-        c = toupper(c);
-    }
-    cout<<s;
+//     for(char &c : s)  {
+//         c = toupper(c);
+//     }
+//     cout<<s;
 
-    return 0;
-}
+//     return 0;
+// }
 /*Q - 72. Write a C++ program that reads n digits chosen from 0 to 9 and counts 
 the number of combinations where the sum of the digits equals the given number
 . Do not use the same digits in a combination.*/
@@ -547,4 +547,90 @@ sales quantity. All input values must be greater than or equal to 0 and less
  sales quantity does not exceed 100. If a fraction occurs in the average of the 
  sales quantity, round to the first decimal place.*/
 
+//  int main(){
+//     int unit{},unit_price{};
+
+//     int total_sale{},average_sale{};
+
+//     bool run{false};
+
+//     cout<<"No of items bought: ";
+//     cin>>unit;
+//     cout<<"Price per item: ";
+//     cin>>unit_price;
+
+//     if(unit > 1000 || unit < 0 || unit_price > 1000 || unit_price < 0 ){
+//         cout<<"Enter value between 0 and 1000"<<endl;
+//         run = true;
+//     }
+//     total_sale = unit * unit_price;
+//     average_sale = static_cast<double>(total_sale) * unit;
+
+//     cout<<"Total Sale: $"<<total_sale<<endl;
+//     cout<<"Average of Sales Quantity: $"<<average_sale<<endl;
+
+
+//     return 0;
+//  }
+
+/* Q - 74. Write a C++ program that accepts various numbers and computes the difference between 
+the highest number and the lowest number. All input numbers should be real numbers 
+between 0 and 1,000,000. The output (real numbers) may include an error of 0.01 or less.*/
+
+// int main(){
+//     vector<double>numbers;
+//     int size{};
+//     double input{};
+//     double diff{};
+//     const double error{0.01};
+
+//     cout<<"Enter a number between 0 and 1,000,000(enter negative value to stop): ";
+
+//     while(true){
+//         cout<<">>";
+//         cin>>input;
+        
+//         if(input < 0) break;
+//         if(input >= 0 && input <= 1000000){
+//             numbers.push_back(input);
+//         }else{
+//             cout<<"Invalid input";
+//         }
+//     }
+//     if(numbers.empty()){
+//         cout<<"No valid value entered. Exiting...";
+//     }
+
+//     size = numbers.size();
+//     double largest = numbers[0];
+//     double smallest = numbers[0];
+
+//     for(int i{1}; i < size;i++){
+//         if(numbers[i] > largest){
+//             largest = numbers[i];
+//         }
+//         if(numbers[i] < smallest){
+//             smallest = numbers[i];
+//         }
+//     }
+//     diff = largest - smallest;
+
+//     if (abs(diff) <= error) {
+//         cout << "The difference between the highest and lowest numbers is within the acceptable error range: " << diff << "\n";
+//     } else {
+//         cout << "The difference between the highest and lowest numbers is greater than the acceptable error range.\n";
+//     }
+
+//     return 0;
+// }
+
+/* Q - 75. Write a C++ program to compute the sum of the specified number of prime numbers.*/
+int main(){
+    vector<int>prime{};
+    int count{1};
+    int n{};
+    
+
+    return 0;
+}
 

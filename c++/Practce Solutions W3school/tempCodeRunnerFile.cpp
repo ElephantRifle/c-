@@ -1,1 +1,1 @@
- // cout<<first<<","<<second<<","<<third<<endl;
+cout<<count;
