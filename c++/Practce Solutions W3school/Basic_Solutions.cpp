@@ -234,34 +234,34 @@ using namespace std;
 //     return 0;
 // }
  //TO UNDERSTAND HOW THE lOOP WORKS IN FUNCTION binary_addition
-// #include <iostream>
-// #include<string>
-// using namespace std;
+#include <iostream>
+#include<string>
+using namespace std;
 
-// int main() {
+int main() {
     
-//     int i=3;
-//     int j=3;
+    int i=3;
+    int j=3;
     
-//     int s1{1};
-//     int s2{5};
+    int s1{1};
+    int s2{5};
     
-//     while(i>=0 || j>=0 ){
-//         int sum{};
+    while(i>=0 || j>=0 ){
+        int sum{};
         
-//         if(i>=0){
-//             sum+=s1;
-//             i--;
-//             cout<<sum;
-//         }
-//         if(j>=0){
-//             sum+=s2;
-//             j--;
-//             cout<<sum;
-//         }
+        if(i>=0){
+            sum+=s1;
+            i--;
+            cout<<sum;
+        }
+        if(j>=0){
+            sum+=s2;
+            j--;
+            cout<<sum;
+        }
 
-//     }
-//     return 0;
-// }
+    }
+    return 0;
+}
 
  // 62. Write a C++ program that reads the integer n and prints a twin prime that has the maximum size among twin primes less than or equal to n.

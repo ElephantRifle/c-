@@ -512,31 +512,39 @@ count the number of digits in the sum value.*/
 //     return 0;
 // }
 //Another approach using reference and ranged based for loop,this dosen't copy data
-// int main(){
-//     string s{};
-//     cout<<"->";
-//     getline(cin,s);
+int main(){
+    string s{};
+    cout<<"->";
+    getline(cin,s);
 
-//     for(char &c : s){
-//         c = toupper(c);
-//     }
-//     cout<<s;
+    for(char &c : s)  {
+        c = toupper(c);
+    }
+    cout<<s;
 
-//     return 0;
-// }
+    return 0;
+}
 /*Q - 72. Write a C++ program that reads n digits chosen from 0 to 9 and counts 
 the number of combinations where the sum of the digits equals the given number
 . Do not use the same digits in a combination.*/
 
-int main(){
-    int n{},s{};
-    cout<<"How many number your want ex.3=(123)->";
-    cin>>n;
-    cout<<"What should be the sum of those number ex.5=3+2+1->";
-    cin>>s;
+// int main(){
+//     int n{},s{};
+//     cout<<"How many number your want ex.3=(123)->";
+//     cin>>n;
+//     cout<<"What should be the sum of those number ex.5=3+2+1->";
+//     cin>>s;
+
 
     
+//     return 0;
+// }
+
+/* Q - 73. Write a C++ program that accepts the sales unit price and sales 
+quantity of various items and computes the total sales amount and the average 
+sales quantity. All input values must be greater than or equal to 0 and less
+ than or equal to 1,000. In addition, the number of pairs of sales unit and 
+ sales quantity does not exceed 100. If a fraction occurs in the average of the 
+ sales quantity, round to the first decimal place.*/
 
 
-    return 0;
-}
