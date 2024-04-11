@@ -78,6 +78,5 @@ int main(){
     cout<<"It is not a Armstrong number "<<endl;
   }
   
-
     return 0;
 }

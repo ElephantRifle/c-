@@ -14,7 +14,7 @@ int main(){
         {
             cout<<" ";
         }
-        for(int j{1};j<=i;j++)
+        for(int j{1};j <= i;j++)
         {
             cout<<coefficient<<" ";
             coefficient=coefficient*(i-j)/j;
@@ -24,6 +24,6 @@ int main(){
     } 
 
 
-
     return 0;
+    
 }
