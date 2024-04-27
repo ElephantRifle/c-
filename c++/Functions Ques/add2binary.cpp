@@ -25,10 +25,8 @@ string add_two_binary(string s1, string s2){
         sum = sum % 2;
 
         result = to_string(sum) + result;
-
     }
     return result;
-
 }
 
 int main(){
