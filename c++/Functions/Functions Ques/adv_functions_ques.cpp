@@ -98,6 +98,9 @@ int hexadecimal_to_decimal(string hex){
         else if(hex[i] >= 'A' && hex[i] <= 'F'){
             ans += x *(hex[i] - 'A' + 10);
         }
+        else if(hex[i] >= 'a' && hex[i] <= 'f'){
+            ans += x *(hex[i] - 'a' + 10);
+        }
         x *= 16;
     }
     return ans;

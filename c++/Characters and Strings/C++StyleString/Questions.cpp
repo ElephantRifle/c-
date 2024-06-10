@@ -1,7 +1,7 @@
 #include<iostream>
 #include<string>
 using namespace std;
-//Comment out the 
+
 //#define FIRST_MAIN //First Question
 //#define SECOND_MAIN  //Second Question
 #define THIRD_MAIN   //Third Question
@@ -58,7 +58,28 @@ int main(){
 #endif
 
 #ifdef THIRD_MAIN
+//Question 3- Find highest frequency of alphabet appeared in a string
 int main(){
+    string str = "bbbfgfgdrhhhaaaabbbaaaa";
+
+    int freq[26] = {0};// {0} and the below loop does the same thing 
+    // for(int i{0};i < 26;i++){
+    //     freq[i] = 0;
+    // }
+
+    for(int i{0};i < str.size();i++){
+        freq[str[i] - 'a']++;
+    }
+
+    int maxF{};
+    char ch = '\0';
+    for(int i{0};i < 26;i++){
+        if(freq[i] > maxF){
+            maxF = freq[i];
+            ch = 'a' + i;
+        }
+    }
+    cout<<maxF<<" times "<<ch<<endl;
 
 
     return 0;
