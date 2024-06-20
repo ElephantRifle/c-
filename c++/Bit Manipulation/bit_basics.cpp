@@ -23,10 +23,10 @@ int updatebit(int n, int pos, int value){
     return (n | (value << pos));
 }
 int main(){
-    //cout<<getbit(5,2)<<endl;
-    //cout<<setbit(10,1)<<endl;
+    cout<<getbit(5,2)<<endl;
+    // cout<<setbit(5,1)<<endl;
     //cout<<clearbit(10,1)<<endl;
-    cout<<updatebit(5,1,1)<<endl;
+    // cout<<updatebit(5,1,1)<<endl;
 
     return 0;
 }
