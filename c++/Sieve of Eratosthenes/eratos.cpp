@@ -51,23 +51,66 @@ using namespace std;
 
 //Sieve of Eratosthenes Method
 //"sieve" refers to a method for finding all prime numbers up to a given limit
-int main(){
-    int arr[50]{};
-    for(int i{2};i < 50;i++){
-        arr[i-2] = i;
-    }
-    for(int j{0};j < 50;j++){
-        cout<<arr[j]<<endl;
-    }
+// void isPrime(int n){
+//     int prime[100]{0}; // We can use n instead of 100 as few compiler supports VLAs 
+//     for(int i{2};i <= n;i++){
+//         if(prime[i] == 0){
+//             for(int j{i*i};j <= n;j+=i){
+//                 prime[j] = 1;
+//             }
+//         }
+//     }
+//     for(int i{2};i <= n;i++){
+//         if(prime == 0){
+//             cout<<i<<" ";
+//         }
+//         cout<<endl;
+//     }
+// }
+
+// int main(){
+//     int n{};
+//     cout<<"Number: ";
+//     cin>>n;
+
+//     isPrime(n);
     
-    //diff answer
-    // int arr[50]{};
-    // for(int i{0};i < 50;i++){
-    //     arr[i] = i+2;
-    // }
-    // for(int j{0};j < 50;j++){
-    //     cout<<arr[j]<<endl;
-    // }
+//     return 0;
+// }
+
+
+
+//Prime Factorisation using Sieve
+
+void primefactor(int n){
+    int spf[n]{};
+
+    for(int i{2};i <= n;i++){
+        spf[i] = i;
+    }
+    for(int i{2};i <= n;i++){
+        if(spf[i] == i){
+            for(int j{i*i};j <=n ;j+=i){
+                if(spf[j] == j){
+                    spf[j] = i;
+                }
+            }
+        }
+    }
+    while(n != 1){
+        cout<<spf[n]<<" ";
+        n = n / spf[n]; 
+    }
+
+
+}
+int main(){
+    int n{};
+    cout<<"Enter number: ";
+    cin>>n;
+
+    primefactor(n);
+
 
     return 0;
 }

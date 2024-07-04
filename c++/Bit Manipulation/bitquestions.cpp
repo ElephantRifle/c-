@@ -1,24 +1,24 @@
 #include<iostream>
 using namespace std;
 //Q -- WAP to check if a given number is power of 2
-// bool isPowerofTWO(int n){
-//     if(n <= 0) return false;
-//     return (n & (n-1)) == 0;
-// }
-// int main(){
-//     int n{};
-//     cout<<"Enter number: ";
-//     cin>>n;
+bool isPowerofTWO(int n){
+    if(n <= 0) return false;
+    return (n & (n-1)) == 0;
+}
+int main(){
+    int n{};
+    cout<<"Enter number: ";
+    cin>>n;
 
-//     // bool a = isPowerofTWO(n);
-//     if(isPowerofTWO(n)){
-//         cout<<n<<" is power of 2"<<endl;
-//     }else{
-//         cout<<n<<" is not power of 2"<<endl;
-//     }
+    // bool a = isPowerofTWO(n);
+    if(isPowerofTWO(n)){
+        cout<<n<<" is power of 2"<<endl;
+    }else{
+        cout<<n<<" is not power of 2"<<endl;
+    }
 
-//     return 0;
-// }
+    return 0;
+}
 
 //ANOTHER APPROACH
 //Q -- WAP to check if a given number is power of 2
