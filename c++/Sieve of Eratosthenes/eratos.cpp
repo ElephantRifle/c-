@@ -101,8 +101,6 @@ void primefactor(int n){
         cout<<spf[n]<<" ";
         n = n / spf[n]; 
     }
-
-
 }
 int main(){
     int n{};
@@ -110,7 +108,6 @@ int main(){
     cin>>n;
 
     primefactor(n);
-
 
     return 0;
 }
