@@ -1,4 +1,3 @@
-//Use Breakpoint
 #include<iostream>
 #include<string>
 using namespace std;
@@ -11,11 +10,11 @@ class Account{
 
     public:
     //Methods
-    //Declared inline
+    //Declared and defined inline
     void set_balance(double bal){balance=bal;}
     double get_balance(){return balance;}
 
-    //Methods that will be declared outside the class declaration
+    //Methods that will be implemented or defined  outside the class declaration
     void set_name(string n);
     string get_name();
 

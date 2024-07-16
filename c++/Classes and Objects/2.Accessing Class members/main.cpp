@@ -70,7 +70,7 @@ class Player{
     int health{75};
     int xp{3};
 
-    //Methods
+    //Methods or member function
     void talk(string text_to_say){
         cout<<name<<" says "<<text_to_say<<endl;
     };
